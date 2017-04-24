@@ -1,5 +1,13 @@
-var numbers = [1, 2, 3, 4, 100, 150];
+var page = require('page');
 
-var numeros1 = numbers.map(num => num + 1);
+var main = document.getElementById('main-container')
 
-console.log('Numeros mas 1', numeros1);
+page('/', function (ctx, next) {
+  main.innerHTML = 'Home <a href="/signup">Signup</a>';
+})
+
+page('/signup', function (ctx, next) {
+  main.innerHTML = 'Signup <a href="/no-existe">No existe</a>';
+})
+
+page();
