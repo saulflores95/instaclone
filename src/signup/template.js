@@ -5,7 +5,7 @@ var translate = require('../translate');
 var signupForm = yo`<div class="col s12 m7">
             <div class="row">
               <div class="signup-box">
-                <h1 class="platzigram">Platzigram</h1>
+                <h1 class="platzigram">Instaclone</h1>
                 <form class="signup-form">
                   <h2>${translate.message('signup.subheading')}</h2>
                   <div class="section">
@@ -29,5 +29,5 @@ var signupForm = yo`<div class="col s12 m7">
               </div>
             </div>
           </div>`;
-          
+
  module.exports = landing(signupForm);
